@@ -24,6 +24,9 @@ $recept = mysqli_fetch_assoc($result);
 </head>
 
 <body>
+
+    <?php include "header.php" ?>
+
     <main>
         <div class="allInfoDetailPagina">
             <div>
