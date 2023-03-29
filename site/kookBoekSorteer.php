@@ -2,9 +2,7 @@
 
 require 'database.php';
 
-$id = $_GET['id'];
-
-$sql = "SELECT * FROM recept WHERE id = $id";
+$sql = "SELECT * FROM recept ";
 
 $result = mysqli_query($conn, $sql);
 
