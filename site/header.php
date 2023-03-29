@@ -11,12 +11,12 @@
 <body>
     <header>
         <nav id="mainNavbar">
-            <li><a class="padNavbarTxt" href="index.php" style="color: inherit;" target="_blank">Home</a></li>
+            <li><a class="padNavbarTxt" href="index.php" style="color: inherit;">Home</a></li>
             <li><a class="padNavbarTxt">Recepten</a></li>
             <li><a class="padNavbarTxt">Categorieen</a></li>
             <li><a class="borderZoeken"><input class="txtZoeken" type="text" placeholder="Zoek recepten.."></a></li>
             <li><a class="padNavbarTxt">Ingredienten</a></li>
-            <li><a class="padNavbarTxt" href="kookBoekSorteer.php" style="color: inherit;" target="_blank">Tabel</a></li>
+            <li><a class="padNavbarTxt" href="kookBoekSorteer.php" style="color: inherit;">Tabel</a></li>
             <li><a class="padNavbarTxt">Contact</a></li>
         </nav>
     </header>
