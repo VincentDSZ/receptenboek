@@ -21,17 +21,10 @@ $recept = mysqli_fetch_assoc($result);
 </head>
 
 <body>
-    <header>
-        <nav id="mainNavbar">
-            <li><a class="padNavbarTxt">Home</a></li>
-            <li><a class="padNavbarTxt">Recepten</a></li>
-            <li><a class="padNavbarTxt">Categorieen</a></li>
-            <li><a class="borderZoeken"><input class="txtZoeken" type="text" placeholder="Zoek recepten.."></a></li>
-            <li><a class="padNavbarTxt">Ingredienten</a></li>
-            <li><a class="padNavbarTxt">Tabel</a></li>
-            <li><a class="padNavbarTxt">Contact</a></li>
-        </nav>
-    </header>
+
+    <?php include "header.php" ?>
+
+
     <table class="table-sortable">
         <thead>
             <tr class="borderKiezen">
@@ -67,11 +60,7 @@ $recept = mysqli_fetch_assoc($result);
         </tbody>
     </table>
 
-    <footer>
-        <div class="footer-bottom">
-            <p>copyright &copy;2023 Receptenboek. designed by <span>Vincent</span></p>
-        </div>
-    </footer>
+    <?php include "footer.php" ?>
 
     <script src="kookBoekSorteer.js"></script>
 
