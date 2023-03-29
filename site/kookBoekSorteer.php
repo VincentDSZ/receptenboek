@@ -1,3 +1,18 @@
+<?php
+
+require 'database.php';
+
+$id = $_GET['id'];
+
+$sql = "SELECT * FROM recept WHERE id = $id";
+
+$result = mysqli_query($conn, $sql);
+
+$recept = mysqli_fetch_assoc($result);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
