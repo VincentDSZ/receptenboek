@@ -1,0 +1,164 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: whitesmoke;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 1px 2px 10px 3px #d4d4d4;
+}
+
+#mainNavbar {
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 36px 0px;
+    font-size: 16px;
+}
+
+li {
+    display: table-cell;
+    position: relative;
+    padding: 0px 25px;
+}
+
+.padNavbarTxt {
+    display: inline-block;
+    padding: 0px 5px;
+    transition: 0.25s;
+    position: relative;
+}
+
+.padNavbarTxt:hover {
+    color: #41b79d;
+    cursor: pointer;
+}
+
+.padNavbarTxt:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    top: 18px;
+    left: 0px;
+    background-color: #41b79d;
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
+
+
+.padNavbarTxt:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+    width: 100%;
+}
+
+.borderZoeken {
+    border: 1px solid;
+    padding: 5px 10px 7px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.txtZoeken {
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #424242;
+    font-weight: 500;
+}
+
+.txtZoeken:focus {
+    outline: none;
+}
+
+.txtRecepten {
+    margin: 35px 0px 5px 30px;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -1.3px;
+    color: #333;
+}
+
+.borderAroundRecept {
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #fff;
+    margin: 30px 0px 0px 30px;
+    box-shadow: 2px 2px 8px 4px #d4d4d4;
+    transition: 0.6s;
+}
+
+.borderAroundRecept:hover {
+    box-shadow: 4px 4px 12px 6px #a9a9a9;
+    transform: scale(1.02);
+    transition: 0.4s;
+    cursor: pointer;
+    opacity: .9;
+}
+
+img {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.borderOffTxt {
+    padding: 0;
+}
+
+.borderInfoTxt {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: whitesmoke;
+}
+
+.padInfoTxt {
+    padding: 10px 10px 0px 10px;
+}
+
+.txtNasi {
+    padding: 15px 0px 38px 30px;
+    font-weight: 600;
+    color: #3f3f3f;
+}
+
+.padIngTxt {
+    padding: 10px 8px 0px 30px;
+}
+
+.material-symbols-outlined.md-19 {
+    font-size: 19px;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-bottom {
+    background: #111;
+    width: 100vw;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

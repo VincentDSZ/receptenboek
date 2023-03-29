@@ -1,0 +1,230 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: whitesmoke;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 1px 2px 10px 3px #d4d4d4;
+}
+
+#mainNavbar {
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 36px 0px;
+    font-size: 16px;
+}
+
+li {
+    display: table-cell;
+    position: relative;
+    padding: 0px 25px;
+}
+
+.padNavbarTxt {
+    display: inline-block;
+    padding: 0px 5px;
+    transition: 0.25s;
+    position: relative;
+}
+
+.padNavbarTxt:hover {
+    color: #41b79d;
+    cursor: pointer;
+}
+
+.padNavbarTxt:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    top: 18px;
+    left: 0px;
+    background-color: #41b79d;
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
+
+
+.padNavbarTxt:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+    width: 100%;
+}
+
+.borderZoeken {
+    border: 1px solid;
+    padding: 5px 10px 7px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.txtZoeken {
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #424242;
+    font-weight: 500;
+}
+
+.txtZoeken:focus {
+    outline: none;
+}
+
+.allInfoDetailPagina {
+    background-color: white;
+    margin: 0px 0px 0px 40px;
+    box-shadow: 1px 4px 6px 2px #d4d4d4;
+    float: left;
+}
+
+.imgLabel {
+    overflow: hidden;
+    margin: 0;
+    flex-direction: row;
+}
+
+img {
+    border-bottom-right-radius: 75px;
+}
+
+.NasiTxt {
+    color: #303030;
+    padding: 40px 253px 12px 253px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.nasiGorengInfo {
+    color: #303030;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .2px;
+    line-height: 24px;
+    text-align: center;
+    padding: 0px 0px 0px 80px;
+    inline-size: 600px;
+    overflow-wrap: break-word;
+}
+
+.material-symbols-outlined.md-23 {
+    font-size: 23px;
+    font-weight: 600;
+    padding: 3px;
+}
+
+.centerCategorieen {
+    padding: 50px 0px 5px 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.centerCategorieen a {
+    display: block;
+}
+
+.padInfoTxt {
+    padding: 10px 0px;
+}
+
+.categorieenButton {
+    margin-right: 150px;
+    margin-left: 150px;
+    border-top: 3px solid #303030;
+    padding: 50px 0px 25px 0px;
+}
+
+.categorieenButtonBottom {
+    margin-right: 150px;
+    margin-left: 250px;
+    padding: 10px 0px 50px 0px;
+}
+
+.txtButtonCat:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+.txtButtonCat {
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #000;
+    border: 1px solid #000;
+    color: white;
+    border-radius: 50px;
+    margin: 5px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.4s;
+}
+
+.aanDeSlagInfoTXT {
+    background-color: white;
+    margin: 60px 0px 0px 40px;
+    box-shadow: 1px 4px 6px 2px #d4d4d4;
+}
+
+.txtAandeslag {
+    color: #303030;
+    padding: 40px 253px 12px 100px;
+    margin: 0px 253px 10px 153px;
+    font-weight: 600;
+    font-size: 40px;
+    border-bottom: 3px solid #000;
+}
+
+.material-symbols-outlined.md-63 {
+    padding: 0px 0px 0px 0px;
+    font-size: 63px;
+}
+
+.allInfoAanDeSlag {
+    padding: 10px 0px 0px 150px;
+}
+
+.txtStapEen {
+    display: inline-block;
+    width: 140vh;
+    color: #3f3f3f;
+    padding: 15px;
+}
+
+.txtSymbol {
+    display: inline-block;
+    width: 10vh;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-bottom {
+    background: #111;
+    width: 100vw;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
