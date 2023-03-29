@@ -1,0 +1,161 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: whitesmoke;
+    margin: 0px ;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #fff;
+    box-shadow: 1px 2px 10px 3px #d4d4d4;
+}
+#mainNavbar{
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 36px 0px;
+    font-size: 16px;
+}
+
+li {
+    display: table-cell;
+    position: relative;
+    padding: 0px 25px;
+}
+.padNavbarTxt{
+    display: inline-block;
+    padding: 0px 5px;
+    transition: 0.25s;
+    position: relative;
+}
+
+.padNavbarTxt:hover{
+    color: #41b79d;
+    cursor: pointer;
+}
+
+.padNavbarTxt:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    top: 18px;
+    left: 0px;
+    background-color: #41b79d;
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
+
+
+.padNavbarTxt:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+    width: 100%;
+}
+
+.borderZoeken{
+    border: 1px solid;
+    padding: 5px 10px 7px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.txtZoeken{
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #424242;
+    font-weight: 500;
+}
+
+.txtZoeken:focus{
+    outline: none;
+}
+
+
+
+
+
+
+.table-sortable{
+    font-size: 25px;
+    margin: 150px 235px ;
+    box-shadow: 2px 4px 10px 2px #d4d4d4;
+}
+
+.table-sortable th {
+    cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after{
+    content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after{
+    content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+    margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.borderKiezen th{
+    color: whitesmoke;
+    background-color: #41b79d;
+    padding: 2px 30px;
+    border-bottom: 2px solid #949494;
+}
+
+.borderAntwoorden td{
+    background-color: white;
+    padding: 3px 8px;
+    text-align: center;
+    border-bottom: 2px solid #949494;
+}
+
+.borderAntwoordenMiddel td{
+    background-color: whitesmoke;
+    padding: 3px 8px;
+    text-align: center;
+    border-bottom: 2px solid #949494;
+}
+
+
+
+
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-bottom{
+    background: #111;
+    width: 100vw;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
