@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav id="mainNavbar">
-            <li><a class="padNavbarTxt">Home</a></li>
+            <li><a class="padNavbarTxt"><a href="index.php">Home</a></li>
             <li><a class="padNavbarTxt">Recepten</a></li>
             <li><a class="padNavbarTxt">Categorieen</a></li>
             <li><a class="borderZoeken"><input class="txtZoeken" type="text" placeholder="Zoek recepten.."></a></li>
