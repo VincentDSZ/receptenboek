@@ -16,7 +16,7 @@
             <li><a class="padNavbarTxt">Categorieen</a></li>
             <li><a class="borderZoeken"><input class="txtZoeken" type="text" placeholder="Zoek recepten.."></a></li>
             <li><a class="padNavbarTxt">Ingredienten</a></li>
-            <li><a class="padNavbarTxt">Bonus</a></li>
+            <li><a class="padNavbarTxt">Tabel</a></li>
             <li><a class="padNavbarTxt">Contact</a></li>
         </nav>
     </header>
