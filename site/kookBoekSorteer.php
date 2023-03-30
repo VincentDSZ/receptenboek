@@ -1,15 +1,18 @@
 <?php
 
+// Dit is het startpunt van je applicatie.
+
+
 require 'database.php';
 
-$sql = "SELECT * FROM recept ";
+$sql = "SELECT * FROM recept";
 
 $result = mysqli_query($conn, $sql);
 
-$recept = mysqli_fetch_assoc($result);
+$recept = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +26,6 @@ $recept = mysqli_fetch_assoc($result);
 <body>
 
     <?php include "header.php" ?>
-
 
     <table class="table-sortable">
         <thead>
