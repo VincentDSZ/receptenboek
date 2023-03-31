@@ -5,12 +5,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar code eindigd hier */
-
-
-
-
-
 .table-sortable {
     font-size: 25px;
     margin: 150px 235px;
@@ -58,38 +52,4 @@ body {
     padding: 3px 8px;
     text-align: center;
     border-bottom: 2px solid #949494;
-}
-
-
-
-
-/* Footer code begint hier */
-footer {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: 100vw;
-    font-family: sans-serif;
-    padding-top: 40px;
-    color: #fff;
-}
-
-.footer-bottom {
-    background: #111;
-    width: 100vw;
-    padding: 20px 0px;
-    text-align: center;
-}
-
-.footer-bottom p {
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-
-.footer-bottom span {
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
 }
