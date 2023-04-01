@@ -9,8 +9,7 @@ $sql = "SELECT * FROM recept";
 
 $result = mysqli_query($conn, $sql);
 
-$recept = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
+$recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 ?>
 
@@ -38,7 +37,28 @@ $recept = mysqli_fetch_all($result, MYSQLI_ASSOC);
             </tr>
         </thead>
         <tbody>
-            <tr class="borderAntwoorden">
+
+            <?php
+
+            foreach ($recepten as $recept) {
+                printf(
+                    '
+                <tr class="borderAntwoorden">
+                <td>%s</td>
+                <td>%s</td>
+                <td>%d</td>
+                <td>normaal</td>
+                <td>14</td>
+                </tr>',
+                    $recept['id'],
+                    $recept['titel'],
+                    $recept['duur']
+                );
+            }
+
+
+            ?>
+            <!-- <tr class="borderAntwoorden">
                 <td>1</td>
                 <td>Nasi goreng</td>
                 <td>25</td>
@@ -58,7 +78,7 @@ $recept = mysqli_fetch_all($result, MYSQLI_ASSOC);
                 <td>30</td>
                 <td>zeer moeilijk</td>
                 <td>20</td>
-            </tr>
+            </tr> -->
         </tbody>
     </table>
 
