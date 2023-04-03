@@ -2,7 +2,6 @@
 
 // Dit is het startpunt van je applicatie.
 
-
 require 'database.php';
 
 $sql = "SELECT * FROM recept";
@@ -11,8 +10,6 @@ $result = mysqli_query($conn, $sql);
 
 $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-// echo json_encode($recepten);
-// die();
 ?>
 
 <!DOCTYPE html>
