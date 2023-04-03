@@ -11,6 +11,8 @@ $result = mysqli_query($conn, $sql);
 
 $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
+// echo json_encode($recepten);
+// die();
 ?>
 
 <!DOCTYPE html>
@@ -37,48 +39,29 @@ $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
             </tr>
         </thead>
         <tbody>
-
             <?php
 
-            foreach ($recepten as $recept) {
+            foreach ($recepten as $index => $recept) {
+                $class = ($index % 2) === 0 ? "borderAntwoorden" : "borderAntwoordenMiddel";
                 printf(
                     '
-                <tr class="borderAntwoorden">
+                <tr class="%s">
                 <td>%s</td>
                 <td>%s</td>
                 <td>%d</td>
-                <td>normaal</td>
-                <td>14</td>
+                <td>%s</td>
+                <td>%s</td>
                 </tr>',
+                    $class,
                     $recept['id'],
                     $recept['titel'],
-                    $recept['duur']
+                    $recept['duur'],
+                    $recept['moeilijkheidsgraad'],
+                    $recept['ingredienten']
                 );
             }
 
-
             ?>
-            <!-- <tr class="borderAntwoorden">
-                <td>1</td>
-                <td>Nasi goreng</td>
-                <td>25</td>
-                <td>normaal</td>
-                <td>14</td>
-            </tr>
-            <tr class="borderAntwoordenMiddel">
-                <td>4</td>
-                <td>Pisang goreng</td>
-                <td>20</td>
-                <td>makelijk</td>
-                <td>5</td>
-            </tr>
-            <tr class="borderAntwoorden">
-                <td>2</td>
-                <td>Gado gado</td>
-                <td>30</td>
-                <td>zeer moeilijk</td>
-                <td>20</td>
-            </tr> -->
         </tbody>
     </table>
 
