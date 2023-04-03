@@ -44,14 +44,15 @@ $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
             foreach ($recepten as $index => $recept) {
                 $class = ($index % 2) === 0 ? "borderAntwoorden" : "borderAntwoordenMiddel";
                 printf(
-                    '
-                <tr class="%s">
-                <td>%s</td>
-                <td>%s</td>
-                <td>%d</td>
-                <td>%s</td>
-                <td>%s</td>
-                </tr>',
+
+                    '<tr class="%s">
+                        <td>%s</td>
+                        <td>%s</td>
+                        <td>%d</td>
+                        <td>%s</td>
+                        <td>%s</td>
+                    </tr>',
+
                     $class,
                     $recept['id'],
                     $recept['titel'],
