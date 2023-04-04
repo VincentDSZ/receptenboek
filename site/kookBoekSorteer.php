@@ -1,14 +1,12 @@
 <?php
 
-// Dit is het startpunt van je applicatie.
-
 require 'database.php';
 
 $sql = "SELECT * FROM recept";
 
 $result = mysqli_query($conn, $sql);
 
-$recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
+$recept = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 ?>
 
@@ -38,24 +36,23 @@ $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <tbody>
             <?php
 
-            foreach ($recepten as $index => $recept) {
-                $class = ($index % 2) === 0 ? "borderAntwoorden" : "borderAntwoordenMiddel";
+            foreach ($recept as $recepten) {
+                // printf voert een geformatteerde string uit
                 printf(
-
-                    '<tr class="%s">
+                    // de parameters zijn ingevoerd met procenttekens
+                    '<tr class="borderAntwoorden">
                         <td>%s</td>
                         <td>%s</td>
-                        <td>%d</td>
+                        <td>%s</td>
                         <td>%s</td>
                         <td>%s</td>
                     </tr>',
 
-                    $class,
-                    $recept['id'],
-                    $recept['titel'],
-                    $recept['duur'],
-                    $recept['moeilijkheidsgraad'],
-                    $recept['ingredienten']
+                    $recepten['id'],
+                    $recepten['titel'],
+                    $recepten['duur'],
+                    $recepten['moeilijkheidsgraad'],
+                    $recepten['ingredienten']
                 );
             }
 

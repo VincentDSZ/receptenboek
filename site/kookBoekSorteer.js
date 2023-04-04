@@ -10,17 +10,17 @@ function sortTableByColumn(table, column, asc = true) {
     const tBody = table.tBodies[0];
     const rows = Array.from(tBody.querySelectorAll("tr"));
 
-    // Sort each row
+    // sorteer op rij
     const sortedRows = rows.sort((a, b) => {
-        const aColText = a.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
-        const bColText = b.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
+        const aColText = a.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
+        const bColText = b.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
 
         return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
     });
 
     console.log(sortedRows);
 
-    //Remove all existing TRs from the table
+    //verwijder alle TR's van de table
     while (tBody.firstChild) {
         tBody.removeChild(tBody.firstChild);
     }
@@ -28,8 +28,8 @@ function sortTableByColumn(table, column, asc = true) {
     tBody.append(...sortedRows);
 
     table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc", "th-sort-desc"));
-    table.querySelector(`th:nth-child(${ column + 1 })`).classList.toggle("th-sort-asc", asc);
-    table.querySelector(`th:nth-child(${ column + 1 })`).classList.toggle("th-sort-desc", !asc);
+    table.querySelector(`th:nth-child(${column + 1})`).classList.toggle("th-sort-asc", asc); //ascending
+    table.querySelector(`th:nth-child(${column + 1})`).classList.toggle("th-sort-desc", !asc); //decending
 }
 
 document.querySelectorAll(".table-sortable th").forEach(headerCell => {
